@@ -1,0 +1,602 @@
+body{
+    margin: 0;
+    background-color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #fff;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.flex_center{
+    display: flex;
+    align-items: center;
+}
+.inside_header{
+    height: 100%;
+    width: 86%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-weight: 500;
+    font-size: 30px;
+}
+.inside_header a {
+    width: 60px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.menu_button{
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+
+.main_info{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: #363636;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image p{
+    font-size: 94px;
+    margin: 0;
+    color: #dedede;
+    padding-top: 4px;
+}
+.name_surname {
+    font-size: 14px;
+    color: #666666;
+    margin: 2px 0 5px;
+}
+.top_main_info{
+    padding-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login_name{
+    margin: 15px 0 0;
+}
+.top_main_right_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.follow_form {
+    margin: 5px 0 0;
+}
+.button_follow {
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    height: 40px;
+    background-color: #169fff;
+    color: #fafafa;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 0;
+}
+.unfollow_button {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 4px;
+    color: #818181;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+.like_button {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 20px;
+    background-color: #169fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    font-size: 15px;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+}
+.unlike_button {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    color: #818181;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.right_content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.like_counter{
+    margin: 0px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+.top_main_right_info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 250px;
+    height: 40px;
+    margin: 10px 0 0;
+    background-color: #169fff;
+    color: #fafafa;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.bottom_main_info{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info_item h2{
+    margin: 0;
+    color: #333;
+}
+.info_item p{
+    margin: 0;
+    color: #333;
+}
+.info_item{
+    margin: 0;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+.new_post {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2.5%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.new_post_container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 90%;
+    margin-left: 5%;
+}
+.new_post_container i{
+    color: #169fff;
+    font-size: 34px;
+    margin: 20px 0 0;
+}
+.new_post_container p{
+    color: #169fff;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+textarea {
+	outline: none;
+	-moz-appearance: none;
+    color: #444;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid #169fff;
+    resize: none;
+}
+.txta {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    min-height: 75px;
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 1.4;
+    color: #444;
+}
+.new_post_button {
+    background-color: #169fff;
+    border-radius: 4px;
+    color: #fff;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    font-size: 13px;
+    border: 0;
+}
+
+
+
+
+
+
+.content {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2.5%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+.post {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+.top_post_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* DROPDOWN DELETE POST */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    color: #898989;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* END OF DROPDOWN DELETE POST */
+
+
+
+.top_post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post_info{
+    margin-left: 20px;
+}
+.post_info h2{
+    margin: 0;
+    color: #363636;
+    font-size: 22px;
+}
+.post_info p{
+    color: grey;
+    margin: 0;
+    font-size: 12px;
+}
+.post_text{
+    text-align: justify;
+    margin: 13px 40px 18px 5px;
+    color: #333;
+    font-size: 18px;
+}
+
+.post_action_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-bottom: 18px;
+}
+.post_action_container p {
+    margin: 0 0 0 7px;
+    font-size: 14px;
+}
+.counter_like {
+    color: #2f4f4f;
+}
+.fa-heart {
+    font-size: 22px;
+    color: #2f4f4f;
+}
+.fa-heart:hover {
+    cursor: pointer;
+    color: #CD5C5C;
+}
+.line {
+    width: 100%;
+    background-color: deepskyblue;
+    height: 1px;
+    margin: 0 0 10px;
+}
+.under_post {
+    margin: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.min_image {
+    width: 60px;
+    height: 60px;
+    background-color: #363636;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.min_image p{
+    font-size: 32px;
+    margin: 0;
+    color: #dedede;
+    padding-top: 3px;
+}
+.bottom_menu_fixed{
+    display: none;
+}
+.bottom_main_info a{
+    cursor: pointer;
+    color: #333;
+    width: 100px;
+    margin-top: 0;
+    background-color: #fff;
+}
+
+
+
+
+
+
+/*MEDIA */
+@media screen and (max-width: 1000px){
+    .flex_center{
+        display: block;
+    }
+    .main_info{
+        width: 100%;
+        margin: 4.3% 0 0;
+    }
+    .new_post {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        width: 100%;
+        margin-left: 0;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .post_text {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: inherit;
+    }
+    .fa-heart {
+        margin-left: 10px;
+
+    }
+}
+
+@media screen and (max-width: 835px){
+    .bottom_main_info{
+        justify-content: center;
+    }
+    .top_main_info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top_main_right_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_button{
+        display: none;
+    }
+    header{
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    header p{
+        font-size: 26px;
+    }
+    header a {
+        font-size: 14px;
+    }
+    .bottom_menu_fixed {
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        border-top: 1px solid #2ff2f2;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 16;
+        height: 40px;
+        background-color: #fefefe;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .bottom_menu_fixed a{
+        color: #555;
+        font-size: 25px;
+    }
+    .main_info{
+        margin-top: 18%;
+    }
+}
+@media screen and (max-width: 500px){
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+    .image p{
+        font-size: 56px;
+    }
+    .new_post_button {
+        width: 90%;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        font-size: 13px;
+    }
+    .min_image {
+        width: 45px;
+        height: 45px;
+        background-color: #363636;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .min_image p{
+        font-size: 20px;
+        margin: 0;
+        color: #dedede;
+        font-weight: bold;
+    }
+    .post_info h2{
+        font-size: 19px;
+    }
+    .post_info p{
+        font-size: 10px;
+    }
+    .post_info{
+        margin-left: 12px;
+    }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    background-color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #fff;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.flex_center{
+    display: flex;
+    align-items: center;
+}
+.inside_header{
+    height: 100%;
+    width: 86%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-weight: 500;
+    font-size: 30px;
+}
+.inside_header a {
+    width: 60px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.menu_button{
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+.content {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.post {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+.top_post_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post_info{
+    margin-left: 20px;
+}
+.post_info h2{
+    margin: 0;
+    color: #363636;
+    font-size: 22px;
+}
+.post_info p{
+    color: grey;
+    margin: 0;
+    font-size: 12px;
+}
+.post_text{
+    text-align: justify;
+    margin: 13px 40px 18px 5px;
+    color: #333;
+    font-size: 18px;
+}
+
+.post_action_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-bottom: 18px;
+    margin-right: 6%;
+}
+.post_action_container p {
+    margin: 0 0 0 7px;
+    font-size: 14px;
+}
+.like_button {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 20px;
+    background-color: #169fff;
+    color: #fafafa;
+    font-size: 15px;
+    border: 0;
+    border-radius: 4px;
+}
+.unlike_button {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    color: #818181;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+}
+.right_content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.like_counter{
+    margin: 0px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+.fa-heart {
+    font-size: 22px;
+    color: #2f4f4f;
+}
+.fa-heart:hover {
+    cursor: pointer;
+    color: #CD5C5C;
+}
+
+.line {
+    width: 100%;
+    background-color: deepskyblue;
+    height: 1px;
+    margin: 0 0 10px;
+}
+.under_post {
+    margin: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.min_image {
+    width: 60px;
+    height: 60px;
+    background-color: #363636;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.min_image p{
+    font-size: 32px;
+    margin: 0;
+    color: #dedede;
+}
+.bottom_menu_fixed{
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px){
+    header{
+        margin-bottom: 30px;
+    }
+    .flex_center{
+        display: block;
+    }
+    .main_info{
+        width: 100%;
+        margin: 4.3% 0 0;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .post_text {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: inherit;
+    }
+    .fa-heart {
+        margin-left: 10px;
+
+    }
+}
+@media screen and (max-width: 835px){
+    header{
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+    header p{
+        font-size: 26px;
+    }
+    header a {
+        font-size: 14px;
+    }
+    .menu_button{
+        display: none;
+    }
+    .bottom_menu_fixed {
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        border-top: 1px solid #2ff2f2;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 16;
+        height: 40px;
+        background-color: #fefefe;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .under_post{
+        height: 24px;
+    }
+    .bottom_menu_fixed a{
+        color: #555;
+        font-size: 25px;
+    }
+    .content{
+        margin-top: 18%;
+        margin-bottom: 18%;
+    }
+}
+@media screen and (max-width: 500px){
+    .min_image {
+        width: 45px;
+        height: 45px;
+        background-color: #363636;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .min_image p{
+        font-size: 20px;
+        margin: 0;
+        color: #dedede;
+        font-weight: bold;
+    }
+    .post_info h2{
+        font-size: 19px;
+    }
+    .post_info p{
+        font-size: 10px;
+    }
+    .post_info{
+        margin-left: 12px;
+    }
+}
